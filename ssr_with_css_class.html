@@ -1,0 +1,218 @@
+<html>
+  <head>
+    <title>
+      Server Side Rendering
+    </title>
+    <script src="./check_support.js"></script>
+    <style>
+      .imageStyle {
+        width: 400px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="supported"></p>
+    <div id="app"><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=0" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=1" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=2" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=3" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=4" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=5" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=6" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=7" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=8" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=9" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=10" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=11" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=12" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=13" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=14" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=15" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=16" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=17" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=18" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=19" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=20" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=21" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=22" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=23" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=24" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=25" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=26" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=27" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=28" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=29" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=30" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=31" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=32" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=33" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=34" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=35" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=36" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=37" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=38" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=39" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=40" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=41" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=42" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=43" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=44" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=45" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=46" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=47" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=48" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=49" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=50" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=51" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=52" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=53" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=54" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=55" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=56" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=57" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=58" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=59" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=60" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=61" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=62" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=63" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=64" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=65" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=66" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=67" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=68" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=69" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=70" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=71" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=72" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=73" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=74" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=75" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=76" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=77" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=78" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=79" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=80" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=81" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=82" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=83" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=84" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=85" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=86" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=87" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=88" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=89" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=90" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=91" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=92" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=93" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=94" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=95" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=96" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=97" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=98" alt="placeholderimg">
+      </div><div class="imageStyle">
+        <img loading="lazy" src="https://placem.at/places?h=400&amp;w=400&amp;random=99" alt="placeholderimg">
+      </div></div>
+  </body>
+</html>
